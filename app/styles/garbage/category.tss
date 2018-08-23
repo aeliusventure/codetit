@@ -1,0 +1,57 @@
+"#wrapper1": {
+    layout: 'vertical',
+    top: 0,
+    left: 0,
+    width: Alloy.Globals.UI.displayWidth,
+    backgroundColor: '#fff',
+},
+"#wrapper2": {
+    layout: 'vertical',
+    top: 0,
+    left: Alloy.Globals.UI.displayWidth,
+    width: Alloy.Globals.UI.displayWidth,
+    backgroundColor: '#fff',
+},
+".switchBtn": {
+    top: 10, bottom: 10,
+    width: '65%',
+    height: Ti.UI.SIZE,
+    backgroundImage: '/images/btn_sub_action_l.png',
+    backgroundSelectedImage: '/images/btn_sub_action_l_x.png',
+    font: { fontSize: 17, fontFamily: Alloy.Globals.UI.font.fontAwesome.fontfamily },
+    textAlign: Ti.UI.TEXT_ALIGNMENT_CENTER,
+    color: '#fff',
+}
+
+".itemXValueView": {
+    layout: 'vertical',
+    height: Ti.UI.SIZE,
+},
+".itemCombo": {
+    top: 0,
+    width: Ti.UI.FILL,
+    height: Ti.UI.SIZE,
+},
+".itemNumContainer": {
+    top: 5,
+    width: Ti.UI.FILL,
+    height: Ti.UI.SIZE,
+},
+".itemNum": {
+    left: 0,
+    width: '50%',
+    height: Ti.UI.SIZE,
+    textAlign: Ti.UI.TEXT_ALIGNMENT_RIGHT,
+},
+".itemNumStr": {
+    left: '55%',
+},
+
+"#garbageDescLabel": {
+    top: 15,
+    width: Ti.UI.FILL,
+    height: Ti.UI.SIZE,
+    editable: false,
+    autoLink: Ti.UI.AUTOLINK_URLS,
+    borderWidth: 0,
+}

@@ -1,0 +1,28 @@
+{
+    "global": {
+        "url_turoial": "http://gomi-map.org/general_user/help",
+        "url_about_us": "http://hozugawa.org/",
+        "url_agreement": "http://gomi-map.org/privacyPolicy"
+    },
+    "env:development": {
+        "server": "http://gomi-map.org/",
+        "sns_dry_run": false
+    },
+    "env:test": {
+        "server": "http://gomi-map.org/",
+        "sns_dry_run": false
+    },
+    "env:production": {
+        "server": "http://gomi-map.org/",
+        "sns_dry_run": false
+    },
+    "os:android": {},
+    "os:blackberry": {},
+    "os:ios": {},
+    "os:mobileweb": {},
+    "dependencies": {
+        "nl.fokkezb.loading": "1.6.1",
+        "com.mcongrove.toast": "1.1",
+        "com.orthlieb.combobox": "1.1"
+    }
+}

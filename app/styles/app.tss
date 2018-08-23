@@ -1,0 +1,193 @@
+"TabGroup[platform=ios]": {
+    tabsBackgroundColor: '#1fb7d7',
+    activeTabIconTint: '#fff',
+},
+"TabGroup[platform=android]": {
+    tabsBackgroundColor: '#f00',
+},
+"Window[platform=ios]": {
+    backgroundColor: '#fff',
+    barColor: '#1fb7d7',
+    navTintColor: '#fff',
+    statusBarStyle: Ti.UI.iPhone.StatusBar.LIGHT_CONTENT,
+    translucent: false,
+},
+"Window[platform=android]": {
+    backgroundColor: '#f8f8f8',
+},
+"ScrollView": {
+    contentHeight: 'auto',
+    showVerticalScrollIndicator: true,
+},
+"Label[platform=ios]": {
+    font: {fontSize:14},
+    color: '#000',
+},
+"Label[platform=android]": {
+    font: {fontSize:14},
+    color: '#000',
+},
+"TextField[platform=ios]": {
+    color: '#111',
+    font: {fontSize:14},
+    autocapitalization: Ti.UI.TEXT_AUTOCAPITALIZATION_NONE,
+    borderStyle: Ti.UI.INPUT_BORDERSTYLE_ROUNDED,
+},
+"TextField[platform=android]": {
+    color: '#111',
+    font: {fontSize:14},
+    autocapitalization: Ti.UI.TEXT_AUTOCAPITALIZATION_NONE,
+    borderStyle: Ti.UI.INPUT_BORDERSTYLE_ROUNDED,
+},
+"TextArea[platform=ios]": {
+    color: '#111',
+    font: {fontSize:14},
+    borderColor: "#ddd",
+    borderWidth: 1,
+    borderRadius: 4,
+},
+"TextArea[platform=android]": {
+    color: '#111',
+    font: {fontSize:14},
+},
+"Toolbar[platform=ios]": {
+    barColor: "#1fb7d7",
+    tintColor: '#fff',
+},
+
+// 表示
+// コンテナ, タイトル, 内容
+".itemContainer": {
+    top: 8,
+    bottom: 10,
+    left: 10,
+    right: 10,
+    height: Ti.UI.SIZE,
+},
+".itemTitle": {
+    left: 0,
+    width: '38.5%',
+    height: Ti.UI.SIZE,
+    textAlign: Ti.UI.TEXT_ALIGNMENT_LEFT,
+    font: {fontSize:14,fontWeight:'bold'},
+    color: '#333',
+},
+".itemValue": {
+    left: '40%',
+    right: 0,
+    height: Ti.UI.SIZE,
+    textAlign: Ti.UI.TEXT_ALIGNMENT_LEFT,
+    font: {fontSize:14},
+    color: '#333',
+},
+".itemSeparator": {
+    left: 10,
+    right: 10,
+    height: 1,
+    backgroundColor: '#ddd',
+},
+
+// 入力
+// コンテナ, タイトル, 内容
+".itemXContainer": {
+    top: 3,
+    bottom: 3,
+    left: 10,
+    right: 10,
+    height: Ti.UI.SIZE,
+},
+".itemXTitle": {
+    left: 0,
+    width: '38.5%',
+    height: Ti.UI.SIZE,
+    textAlign: Ti.UI.TEXT_ALIGNMENT_LEFT,
+    font: {fontSize:14},
+    color: '#333',
+},
+".itemXValue": {
+    left: '40%',
+    right: 0,
+    height: Ti.UI.SIZE,
+    textAlign: Ti.UI.TEXT_ALIGNMENT_LEFT,
+    font: {fontSize:14},
+    color: '#333',
+},
+".itemXValueView": {
+    left: '40%',
+    right: 0,
+},
+".itemXValueView[platform=android]": {
+    height: Ti.UI.SIZE,
+},
+
+// 汎用ボタン
+".btnActionLarge": {
+    width: '88%',
+    height: 44,
+    backgroundImage: '/images/btn_action_l.png',
+    backgroundSelectedImage: '/images/btn_action_l_x.png',
+    textAlign: Ti.UI.TEXT_ALIGNMENT_CENTER,
+    color: '#fff',
+    font: {fontWeight:'bold',fontSize:17},
+},
+".btnSubActionLarge": {
+    width: '88%',
+    height: 44,
+    backgroundImage: '/images/btn_sub_action_l.png',
+    backgroundSelectedImage: '/images/btn_sub_action_l_x.png',
+    textAlign: Ti.UI.TEXT_ALIGNMENT_CENTER,
+    color: '#fff',
+    font: {fontWeight:'bold',fontSize:17},
+},
+".btnDiscardLarge": {
+    width: '88%',
+    height: 44,
+    backgroundImage: '/images/btn_discard_l.png',
+    backgroundSelectedImage: '/images/btn_discard_l_x.png',
+    textAlign: Ti.UI.TEXT_ALIGNMENT_CENTER,
+    color: '#DE2229',
+    font: {fontWeight:'bold',fontSize:17},
+},
+".btnActionSmall": {
+    width: '45%',
+    height: 38,
+    backgroundImage: '/images/btn_action_s.png',
+    backgroundSelectedImage: '/images/btn_action_s_x.png',
+    textAlign: Ti.UI.TEXT_ALIGNMENT_CENTER,
+    color: '#fff',
+    font: {fontWeight:'normal',fontSize:16},
+},
+".btnDiscardSmall": {
+    width: '45%',
+    height: 38,
+    backgroundImage: '/images/btn_discard_s.png',
+    backgroundSelectedImage: '/images/btn_discard_s_x.png',
+    textAlign: Ti.UI.TEXT_ALIGNMENT_CENTER,
+    color: '#DE2229',
+    font: {fontWeight:'normal',fontSize:16},
+},
+".btnCancelSmall": {
+    width: '45%',
+    height: 38,
+    backgroundImage: '/images/btn_cancel_s.png',
+    backgroundSelectedImage: '/images/btn_cancel_s_x.png',
+    textAlign: Ti.UI.TEXT_ALIGNMENT_CENTER,
+    color: '#DE2229',
+    font: {fontWeight:'normal',fontSize:16},
+},
+
+// Windowメニューボタン
+"#refreshButton[platform=ios]": {
+    image: '/images/bar_refresh.png',
+},
+"#filterButton[platform=ios]": {
+    image: '/images/bar_filter.png',
+},
+"#infoButton[platform=ios]": {
+    image: '/images/bar_info.png',
+},
+
+// 縦スペーサー
+".spacer": {
+    height: 10,
+},

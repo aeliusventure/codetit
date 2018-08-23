@@ -1,0 +1,11 @@
+"#window" : {
+},
+"#registerBtn": {
+    backgroundImage: '/images/map_reg_garbage.png',
+    backgroundSelectedImage: '/images/map_reg_garbage_x.png',
+    width: 60,
+    height: 60,
+    bottom: 10,
+    opacity: 1,
+    zIndex: 99,
+},

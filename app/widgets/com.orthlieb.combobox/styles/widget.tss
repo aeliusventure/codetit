@@ -1,0 +1,21 @@
+"#container[platform=ios]": {
+    width: Ti.UI.SIZE,
+    height: 30,
+    // height: Ti.UI.SIZE   // 自動サイズを多用しすぎてすごい重たくなったので固定値
+},
+
+"#field[platform=ios]": {
+    left: 0,
+    center: { y: "50%" },
+    width: Ti.UI.FILL
+},
+
+"#dropButton[platform=ios]": {
+    right: 0,
+    width : Ti.UI.SIZE,
+    height : 30,
+    title: '\uf078',
+    backgroundColor: 'transparent',
+    color: '#888',
+    font: {fontSize:18,fontFamily:Alloy.Globals.UI.font.fontAwesome.fontfamily},
+}

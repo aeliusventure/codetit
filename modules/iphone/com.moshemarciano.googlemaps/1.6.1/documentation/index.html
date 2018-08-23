@@ -1,0 +1,770 @@
+<!DOCTYPE html>
+<!-- saved from url=(0073)file://localhost/var/folders/8s/l8_672gx3gj1qctn3w3spl980000gn/T/243.html -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><meta charset="utf-8"><style>html { font-size: 100%; overflow-y: scroll; -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; }
+
+body{
+  color:#444;
+  font-family:Georgia, Palatino, 'Palatino Linotype', Times, 'Times New Roman',
+              "Hiragino Sans GB", "STXihei", "微软雅黑", serif;
+  font-size:12px;
+  line-height:1.5em;
+  background:#fefefe;
+  width: 45em;
+  margin: 10px auto;
+  padding: 1em;
+  outline: 1300px solid #FAFAFA;
+}
+
+a{ color: #0645ad; text-decoration:none;}
+a:visited{ color: #0b0080; }
+a:hover{ color: #06e; }
+a:active{ color:#faa700; }
+a:focus{ outline: thin dotted; }
+a:hover, a:active{ outline: 0; }
+
+span.backtick {
+  border:1px solid #EAEAEA;
+  border-radius:3px;
+  background:#F8F8F8;
+  padding:0 3px 0 3px;
+}
+
+::-moz-selection{background:rgba(255,255,0,0.3);color:#000}
+::selection{background:rgba(255,255,0,0.3);color:#000}
+
+a::-moz-selection{background:rgba(255,255,0,0.3);color:#0645ad}
+a::selection{background:rgba(255,255,0,0.3);color:#0645ad}
+
+p{
+margin:1em 0;
+}
+
+img{
+max-width:100%;
+}
+
+h1,h2,h3,h4,h5,h6{
+font-weight:normal;
+color:#111;
+line-height:1em;
+}
+h4,h5,h6{ font-weight: bold; }
+h1{ font-size:2.5em; }
+h2{ font-size:2em; border-bottom:1px solid silver; padding-bottom: 5px; }
+h3{ font-size:1.5em; }
+h4{ font-size:1.2em; }
+h5{ font-size:1em; }
+h6{ font-size:0.9em; }
+
+blockquote{
+color:#666666;
+margin:0;
+padding-left: 3em;
+border-left: 0.5em #EEE solid;
+}
+hr { display: block; height: 2px; border: 0; border-top: 1px solid #aaa;border-bottom: 1px solid #eee; margin: 1em 0; padding: 0; }
+
+
+pre , code, kbd, samp { 
+  color: #000; 
+  font-family: monospace; 
+  font-size: 0.88em; 
+  border-radius:3px;
+  background-color: #F8F8F8;
+  border: 1px solid #CCC; 
+}
+pre { white-space: pre; white-space: pre-wrap; word-wrap: break-word; padding: 5px 12px;}
+pre code { border: 0px !important; padding: 0;}
+code { padding: 0 3px 0 3px; }
+
+b, strong { font-weight: bold; }
+
+dfn { font-style: italic; }
+
+ins { background: #ff9; color: #000; text-decoration: none; }
+
+mark { background: #ff0; color: #000; font-style: italic; font-weight: bold; }
+
+sub, sup { font-size: 75%; line-height: 0; position: relative; vertical-align: baseline; }
+sup { top: -0.5em; }
+sub { bottom: -0.25em; }
+
+ul, ol { margin: 1em 0; padding: 0 0 0 2em; }
+li p:last-child { margin:0 }
+dd { margin: 0 0 0 2em; }
+
+img { border: 0; -ms-interpolation-mode: bicubic; vertical-align: middle; }
+
+table { border-collapse: collapse; border-spacing: 0; }
+td { vertical-align: top; }
+
+@media only screen and (min-width: 480px) {
+body{font-size:14px;}
+}
+
+@media only screen and (min-width: 768px) {
+body{font-size:16px;}
+}
+
+@media print {
+  * { background: transparent !important; color: black !important; filter:none !important; -ms-filter: none !important; }
+  body{font-size:12pt; max-width:100%; outline:none;}
+  a, a:visited { text-decoration: underline; }
+  hr { height: 1px; border:0; border-bottom:1px solid black; }
+  a[href]:after { content: " (" attr(href) ")"; }
+  abbr[title]:after { content: " (" attr(title) ")"; }
+  .ir a:after, a[href^="javascript:"]:after, a[href^="#"]:after { content: ""; }
+  pre, blockquote { border: 1px solid #999; padding-right: 1em; page-break-inside: avoid; }
+  tr, img { page-break-inside: avoid; }
+  img { max-width: 100% !important; }
+  @page :left { margin: 15mm 20mm 15mm 10mm; }
+  @page :right { margin: 15mm 10mm 15mm 20mm; }
+  p, h2, h3 { orphans: 3; widows: 3; }
+  h2, h3 { page-break-after: avoid; }
+}
+</style><title>index</title></head><body><h1 id="google-maps-for-ios-module-v-161">Google Maps for iOS module v 1.6.1</h1>
+<h2 id="general">General</h2>
+<p>Tested with Google Maps SDK for iOS ver 1.6.1 and Titanium SDK version 3.1.3.GA,
+newer of versions of each SDK may work but are unsupported.
+if you are having problems with the latest SDK version, please download a supported version from:
+https://developers.google.com/maps/documentation/ios/releases</p>
+<p>Please follow Google's terms of service and "Attribution Requirements" as detailed in
+https://developers.google.com/maps/documentation/ios/intro?hl=en</p>
+<p>You will need to go through a one-time setup process and get Google Maps SDK for iOS.</p>
+<h2 id="download-sdk">Download SDK</h2>
+<p>Download the Google Maps SDK to your mac
+Visit this link: https://developers.google.com/maps/documentation/ios/start
+under "Getting the Google Maps SDK for iOS"</p>
+<p>open the ZIP file somewhere, we will use it in the next step</p>
+<h2 id="obtain-a-valid-license-key">Obtain a valid license key</h2>
+<p>to use Google maps you will need to obtain a license key, instructions are here:
+https://developers.google.com/maps/documentation/ios/start
+under "Obtaining an API Key"</p>
+<p>Make sure you activate the correct service "Google Maps SDK for iOS" and not "Google Maps API v3" which is for Android.</p>
+<p>Make sure you enter your app-id (e.g. com.moshemarciano.maptest) and associate 
+it with your license key, or maps will not load! </p>
+<p>Also make sure your key is active (status: Inactive will not work), view this for more details: https://developers.google.com/console/help/?csw=1#activatingapis</p>
+<p>it might take sometime before your license or app-id association will become active.</p>
+<h2 id="migrate-from-version-10-of-the-module">Migrate from version 1.0 of the module</h2>
+<p>These steps are only needed if you are upgrading from version 1.0 of the module. New users can skip to the next section.</p>
+<ol>
+<li>Go to your titanium project and remove the googlemaps.framework file and put it in someplace else</li>
+<li>Go to the modules folder where you put the com.moshemarciano.googlemaps module</li>
+<li>Find the module.xconfig file in this folder and open it</li>
+<li>In line #13 there is "OTHER_LDFLAGS=$(inherited)  -F "../../Resources"</li>
+<li>Replace that with the folder where you put the GoogleMaps.framework file</li>
+<li>Keep the googlemaps.bundle file in your project resources folder</li>
+<li>Clean your project and rebuild</li>
+</ol>
+<h2 id="put-the-commoshemarcianogooglemaps-module-in-place">Put the com.moshemarciano.googleMaps module in place</h2>
+<p>Usually you will have your modules under this folder</p>
+<pre><code>~/Library/Application Support/Titanium/modules/iphone
+</code></pre>
+<p>or</p>
+<pre><code>/Library/Application\ Support/Titanium/modules/iphone/
+</code></pre>
+<p>for example, once you open it it should look like this</p>
+<pre><code>/Library/Application Support/Titanium/modules/iphone/com.moshemarciano.googlemaps/1.5
+</code></pre>
+<h2 id="edit-modulexcconfig">Edit module.xcconfig</h2>
+<p>on your newly created module folder find the module.xcconfig file and edit it</p>
+<p>on line #13 you will find a directive that begins with:</p>
+<p>OTHER_LDFLAGS=$(inherited) -F YOUR-GOOGLE-FRAMEWORK-FOLDER -framework GoogleMaps</p>
+<p>replace the YOUR-GOOGLE-FRAMEWORK-FOLDER with a full (preferably absolute) path of the folder where you opened your Google Maps SDK. It should contain the GoogleMaps.framework folder (it is a big one) </p>
+<p>example #1:</p>
+<pre><code>OTHER_LDFLAGS=$(inherited) -F"/Users/moshem/Documents/src/ti_modules/ios/googlemaps" -framework GoogleMaps -framework AVFoundation -framework CoreData -framework CoreLocation -framework CoreText -framework GLKit -framework ImageIO -framework OpenGLES -framework QuartzCore -framework SystemConfiguration -weak_library /usr/lib/libc++.dylib
+</code></pre>
+<p>example #2</p>
+<pre><code>OTHER_LDFLAGS=$(inherited) -F /Users/someguy/bin/GoogleMaps/GoogleMaps-iOS-1.3.1/ -framework GoogleMaps -framework AVFoundation -framework CoreData -framework CoreLocation -framework CoreText -framework GLKit -framework ImageIO -framework OpenGLES -framework QuartzCore -framework SystemConfiguration -weak_library /usr/lib/libc++.dylib
+</code></pre>
+<h2 id="create-a-new-titanium-project">Create a new Titanium project</h2>
+<p>in your TiApp.xml you will need to add some lines at the bottom (or use Ti Studio GUI to add the module)</p>
+<p>after the SDK version line add the module declaration</p>
+<pre><code>&lt;sdk-version&gt;3.1.0.GA&lt;/sdk-version&gt;
+&lt;modules&gt;
+    &lt;module platform="iphone" version="1.5"&gt;com.moshemarciano.googlemaps&lt;/module&gt;
+&lt;/modules&gt;
+</code></pre>
+<h2 id="copy-google-maps-sdk-files">Copy Google Maps SDK files</h2>
+<p>Final one-time step would be to copy the Google SDK bundle file to your project
+Resources folder. (Alloy users see next section)</p>
+<p>go into the "GoogleMaps.framework" folder and into it's "Resources" 
+sub folder and copy the "GoogleMaps.bundle" into your Project Resources folder</p>
+<p>your Titanium project Resources folder should look like</p>
+<pre><code>GoogleMaps.bundle/
+KS_nav_ui.png
+KS_nav_views.png
+app.js
+iphone/
+ui/
+</code></pre>
+<h2 id="copy-google-maps-sdk-files-alloy">Copy Google Maps SDK files (Alloy)</h2>
+<p>Final one-time step would be to copy the Google SDK bundle file to your project
+app assets folder. </p>
+<p>go into the "GoogleMaps.framework" folder and into it's "Resources" 
+sub folder and copy the "GoogleMaps.bundle" into your Project Resources folder</p>
+<p>your Titanium project folder structure should look like</p>
+<pre><code>alloy.js
+app/
+    controllers/
+    models/
+    styles/
+    views/
+    assets/
+        iphone/
+            GoogleMaps.bundle/
+</code></pre>
+<h2 id="use-the-module">Use the module</h2>
+<p>The suggested way is to start with the module provided app.js file
+to learn the basics of using the module and the Google Maps API</p>
+<p>Place any graphics, including custom markers in the Resources/iphone folder</p>
+<p>If you are having trouble see the bottom of the file for the troubleshooting section</p>
+<h1 id="usage-reference">Usage reference</h1>
+<h1 id="map-creation">Map Creation</h1>
+<pre><code>    var googlemaps = require('com.moshemarciano.googleMaps');
+
+    googlemaps.licenseKey("BRzljeflsen_TuhKhkKqqa4YTbz398jd2kaA2w");
+
+    var map = googlemaps.createGoogleMap({
+        height:500,
+        width:300,
+        top:50
+    });
+
+
+    // set camera option #1
+
+    map.setCamera ({
+        latitude:32.066158,
+        longitude:34.77781900000002,
+        zoom:6});
+
+    // set camera option #2
+
+    map.setCamera ({
+        latitude:32.066158,
+        longitude:34.77781900000002,
+        zoom:6,
+        bearing:80,
+        viewingAngle:70});
+</code></pre>
+<h1 id="map-creationalloy-v12">Map Creation(Alloy &gt; v1.2)</h1>
+<pre><code>    index.xml
+    =========
+
+    &lt;Window title="Window 1"&gt;
+
+        &lt;Module id="map" module="com.moshemarciano.googleMaps" method="createGoogleMap"
+        width="300" height="300" top="50"/&gt;
+
+    &lt;/Window&gt;
+
+    alloy.js
+    ========
+
+    var googlemaps = require('com.moshemarciano.googleMaps');
+    googlemaps.licenseKey("BRzljeflsen_TuhKhkKqqa4YTbz398jd2kaA2w");
+
+    index.js
+    ========
+
+    $.map.setCamera ({
+        latitude:51.43580627441406,
+        longitude:-0.14256912469863892,
+        zoom:15,
+        bearing:0,
+        viewingAngle:0
+    });
+</code></pre>
+<h1 id="settings">Settings</h1>
+<pre><code>    // Alloy users should use $.map. convention
+
+    map.mapType = "normal"; // normal, hybrid, satellite, terrain
+    map.traffic = true;
+
+    map.zoomGestures = true;
+    map.scrollGestures = true;
+    map.tiltGestures = true;
+    map.rotateGestures = true;
+
+    // triggers the iOS "allow location services" alert
+
+    map.myLocation = true;
+
+    // show my location button control
+
+    map.myLocationButton = true;
+
+    // show compass button, only visible when camera bearing != 0
+
+    map.compassButton = true;
+
+    // overrides newer Google SDK behavior of panning map 
+    // upon marker tap (unofficial workaround)
+
+    map.cameraMoveOnMarkerTap = true;
+
+    // customInfoWindow: if set, will not show infowindow for marker tap, you need to do so on your side
+    // use the mapX and mapY parameters of the various events to figure out
+    // where to display your custom window. May be mutual exclusive with cameraMoveOnMarkerTap
+    //
+    // second option : let the module take care of infoWindow management, you only provide the view
+    // see the custom info window section for more details
+
+    map.customInfoWindow = false;
+
+    /* If you use the Google Maps SDK for iOS in your application, you must include the attribution text as part of a legal notices section in your application. Including legal notices as an independent menu item, or as part of an "About" menu item, is recommended. */
+
+    alert (googlemaps.openSourceLicenseInfo);
+</code></pre>
+<h1 id="getters">Getters</h1>
+<pre><code>    // current map zoom
+
+    alert(map.zoom);
+
+    // current map region
+
+    alert(map.currentRegion);
+
+    // current map type (normal, satellite, terrain, hybrid, none)
+
+    alert(map.mapType);
+
+    // current selected Marker
+
+    alert(map.selectedMarker);
+</code></pre>
+<h1 id="animation">Animation</h1>
+<pre><code>    map.animateToViewingAngle(45);
+
+    map.animateToZoom(15);
+
+    map.animateToBearing(30);
+
+    map.animateToLocation({latitude:31.066158, 
+        longitude:34.87781});
+
+    map.animateToCameraPosition ({
+        latitude:25.066158,
+        longitude:31.77781900000002,
+        zoom:6,
+        bearing:80,
+        viewingAngle:70});
+</code></pre>
+<h1 id="camera">Camera</h1>
+<pre><code>    // zooms in, in 1 increments
+
+    map.zoomIn();
+
+    // zooms out, in 1 increments
+
+    map.zoomOut();
+
+    // zoomTo X zoom level
+
+    map.zoomTo(3);
+
+    // set the camera to match location, animation is disabled
+
+    map.setTarget({
+        latitude:52.444366455078125,
+        longitude:-0.40848709344863892,
+        zoom:14}); // zoom is optional
+
+    // fit map to show Paris : NE = North East corner, SW = South West corner
+
+    map.fitBounds({
+        NElatitude:48.898581,
+        NElongitude:2.2649,
+        SWlatitude:48.815907,
+        SWlongitude:2.416306,
+        padding:0});
+
+    // Shifts the center of the view by the specified number
+    // of points in the x and y directions.
+    // X grows to the right, Y grows down.
+
+    map.scrollBy(50,300);
+</code></pre>
+<h1 id="markers">Markers</h1>
+<pre><code>    // create new markers
+
+    var marker = googlemaps.createMarker({
+                    title:      "MyMarker",
+                    snippet:    "My snippet",
+                    tintColor:  "blue", // mutually exclusive with icon property
+                    userData:   123,
+                    location:   {latitude:35.9348534, longitude:38.9823748923}
+    });
+
+    var london = googlemaps.createMarker({
+                    title:      "London",
+                    snippet:    "My snippet",
+                    animated:   true,
+                    tappable:   true, // redundant, defaults to true
+                    userData:   btn, // pass anthing, including a Ti object
+                    location:   {latitude:35.9348534, longitude:38.9823748923},
+                    icon:       "icon.png" // loaded from your project resources folder
+    });
+
+    var london2 = googlemaps.createMarker({
+             title:      "Custom",
+             snippet:    "Icon",
+             animated:   true,
+             iconView:   customIcon, // pass your own custom view as Marker icon
+             location:   {latitude:51.69614700317383, longitude:-0.2597615075111389},
+             zIndex: 1,
+             rotation: 90,
+             draggable: true,
+             flat: true,
+             groundAnchor: {x:0.4, y:0.2}
+    });
+
+
+    // access marker specific properties
+
+    alert (marker.userData);
+
+    // get all marker properties
+
+    alert(marker.data);
+
+    // add marker to map
+
+    map.addMarker(marker);
+
+    // select a marker programmatically (simulate tap)
+
+    map.selectMarker(marker);
+
+    // unselect marker
+
+    map.selectMarker(null);
+
+    // remove one marker
+
+    map.removeMarker(marker);
+
+    // clear map from all markers
+
+    map.clear();
+</code></pre>
+<h1 id="polylines">Polylines</h1>
+<pre><code>    // path data, each two numbers are X,Y coordinate (each number pair)
+    // make sure you enter an even number of items
+
+    var pathData = [51.14366455078125, -0.20148709344863892, 30.33434, 21.4095095];
+
+    // first method
+
+    var polyline = googlemaps.createPolyline({
+                             path:pathData,
+                             color:"yellow",
+                             width:10
+    });
+
+    // second method - inline path data
+
+    var polyline = googlemaps.createPolyline({
+                             path:[51.14366455078125, -0.20148709344863892, 30.33434, 21.4095095],
+                             color:"yellow",
+                             width:10
+    });
+
+    // add to map
+
+    map.addPolyline(polyline);
+
+    // remove from map
+
+    map.removePolyline(polyline);
+</code></pre>
+<h1 id="circles">Circles</h1>
+<pre><code>    var circle = googlemaps.createCircle({
+            radius:10000,
+            location: {latitude:51.43580627441406, longitude:-0.14256912469863892},
+            color:"black",
+            fillColor:"yellow",  
+            width:2
+    });
+
+    // add to map
+
+    map.addCircle(circle);
+
+    // remove from map
+
+    map.removeCircle(circle);
+</code></pre>
+<h1 id="polygons">Polygons</h1>
+<pre><code>    // path data, each two numbers are X,Y coordinate (each number pair)
+    // make sure you enter an even number of items
+
+    var pathData = [51.14366455078125, -0.20148709344863892, 30.33434, 21.4095095];
+
+    // first method
+    var polygon = googlemaps.createPolygon({
+                            path: newYorkPath,
+                            title:"New York State",
+                            color:"black",
+                            fillColor:"blue",
+                            width:2,
+                            tappable:true,
+    });
+
+    // add to map
+
+    map.addPolygon(polygon);
+
+    // remove from map
+
+    map.removePolygon(polygon);
+</code></pre>
+<h1 id="events">Events</h1>
+<pre><code>    /**
+     * Called after a tap gesture at a particular coordinate, but only if a marker
+     * was not tapped.  This is called before deselecting any currently selected
+     * marker (the implicit action for tapping on the map).
+     */
+
+    map.addEventListener('tapAtCoordinate',function(e){
+        alert(e);
+    });
+
+    /**
+     * Called after the camera position has changed. During an animation, this
+     * delegate might not be notified of intermediate camera positions. However, it
+     * will always be called eventually with the final position of an the animation.
+     */
+
+    map.addEventListener('changeCameraPosition',function(e){
+      Ti.API.info("map event : changeCameraPosition =&gt;" + JSON.stringify(e));
+    });
+
+    /**
+     * Called after a long-press gesture at a particular coordinate.
+     */
+
+    map.addEventListener('longPressAtCoordinate',function(e){
+      Ti.API.info("map event : longPressAtCoordinate =&gt;" + JSON.stringify(e));
+    });
+
+    /**
+     * Called after a marker has been tapped.
+     *
+     */
+
+    map.addEventListener('tapMarker',function(e){
+      Ti.API.info("map event : tapMarker =&gt;" + JSON.stringify(e));
+
+      // check if this is a tap on a specific marker
+      if (e.marker == london)
+        alert ("London was tapped");
+    });
+
+    /**
+     * Called after a marker's info window has been tapped.
+     */
+
+    map.addEventListener('tapInfoWindowOfMarker',function(e){
+      Ti.API.info("map event : tapInfoWindowOfMarker =&gt;" + JSON.stringify(e));
+    });
+
+
+    /**
+     * Called repeatedly when the marker is actively being dragged
+     */
+
+    map.addEventListener('draggingMarker',function(e){
+        Ti.API.info("map event : draggingMarker =&gt;" + JSON.stringify(e));
+    });
+
+    /**
+     * Called once when the marker dragging starts
+     */
+
+    map.addEventListener('dragMarkerBegin',function(e){
+        Ti.API.info("map event : dragMarkerBegin =&gt;" + JSON.stringify(e));
+    });
+
+    /**
+     * Called once when the marker dragging ends
+     */
+
+    map.addEventListener('dragMarkerEnd',function(e){
+        Ti.API.info("map event : dragMarkerEnd =&gt;" + JSON.stringify(e));
+    });
+
+    /**
+     * Called after an overlay has been tapped.
+     * This method is not called for taps on markers.
+     */
+
+    map.addEventListener('tapOverlay',function(e){
+        Ti.API.info("map event : tapOverlay =&gt;" + JSON.stringify(e));
+
+        if ( (e.overlayType == "polygon") &amp;&amp; (e.title == "New York State") )
+            Ti.API.info("Polygon tapped : " + e.title);
+    });
+</code></pre>
+<h1 id="custom-info-window-experimental">Custom Info Window - Experimental</h1>
+<pre><code>    // we still want the module to handle it
+
+    map.customInfoWindow = false;
+
+    var infoWindow;
+    var infoWindowLabel = null;
+
+    // pre-create the view to hold the
+    // custom info window
+
+    infoWindow = createInfoWindow();
+
+    function createInfoWindow() {
+
+        infoWindow = null;
+
+        infoWindow = Ti.UI.createView({
+            width: 120,
+            height: 80,
+            backgroundColor:"red",
+        });
+
+        infoWindowLabel = Ti.UI.createLabel({
+            color: "white",
+            text: "Custom",
+            width: 100,
+            height: 80,
+            top:0,
+            font:{fontSize:20, fontWeight:'bold'},
+            textAlign:'center'
+        });
+
+        infoWindow.add(infoWindowLabel);
+        return infoWindow;
+    }
+
+    // add your own callback to the module
+    // the callback will be called every time
+    // the user taps on a marker, if this callback
+    // is not defined, the default infoWindow will
+    // be shown
+
+    // this is EXPERIMENTAL and thus has limitations:
+    // 
+    // you can't create views or do any fancy UI 
+    // stuff inside the callback other than update
+    // your pre-created view. this is due to some
+    // weird inter-thread issues between Titanium
+    // and iOS UI. if you do, your app will crash
+    // 
+    // also, after the callback a 'tapMarker' event
+    // will fire, if you need to handle it as well
+    // make sure not to do any blocking UI stuff, such
+    // as alert('hi') in the event handler or it might 
+    // make the map unresponsive.
+
+    map.InfoWindowCallback = function (e) {
+
+       if (e.marker == marker) {
+            infoWindow.backgroundColor = "red";
+            infoWindowLabel.text = "Marker 1";
+       } else if (e.marker == marker2) {
+            infoWindow.backgroundColor = "magenta";
+            infoWindowLabel.text = "Marker 2";
+       } else if (e.marker == marker3) {
+            infoWindow.backgroundColor = "blue";
+            infoWindowLabel.text = "Marker 3";
+       }
+
+       return infoWindow;
+    };
+</code></pre>
+<h1 id="license">License</h1>
+<p>license is required per seat, licenses are for current and all future updates of the same version (e.g. 1.1, 1.2, 1.3), next versions of the module (e.g. 2.0,3.0) might be sold seperatly. see LICENSE file in this module for exact details</p>
+<h1 id="troubleshooting">Troubleshooting</h1>
+<h2 id="module-not-found">Module not found</h2>
+<p>if your output looks like this: </p>
+<pre><code>[ERROR] : ** BUILD FAILED ** 
+[ERROR] : The following build commands failed: 
+[ERROR] : Ld build/Debug-iphonesimulator/users\ myApp.app/one\ Two normal i386 [ERROR] : (1 failure
+</code></pre>
+<p>this means that the module is not setup correctly in your environment, review the above instructions, specifically the module.xcconfig issue and try again. for more detailed info, open your project build folder and find the .xcode project file, open it in xcode and try to run it, see the log which usually will be detailed and state "Framework not found" </p>
+<p>View this PDF for more clarification : https://dl.dropboxusercontent.com/u/172026/GoogleMapsSDKNotFound.pdf</p>
+<h2 id="bundle-file-not-found-or-incompatible">Bundle file not found or incompatible</h2>
+<p>if your output looks like this: </p>
+<pre><code>[INFO] : [GoogleMapsModule] Google Maps =&gt; New map instance 
+[ERROR] : The application has crashed with an uncaught exception 'NSInvalidArgumentException'. 
+[ERROR] : Reason: [ERROR] : *** -[NSBundle initWithURL:]: nil URL argument 
+[ERROR] : Stack trace: [ERROR] : 0 CoreFoundation 0x04fa15c8 __exceptionPreprocess 152 
+[ERROR] : 1 libobjc.A.dylib 0x04b428b6 objc_exception_throw 44 
+[ERROR] : 2 CoreFoundation 0x04fa13bb 
+[NSException raise:format:] 139 
+[ERROR] : 3 Foundation 0x023885ce -[NSBundle initWithURL:] 95 
+[ERROR] : 4 Foundation 0x02388557 [NSBundle bundleWithURL:] 67
+</code></pre>
+<p>One of  Google SDK's cryptic error messages. This means that the GoogleFramework.bundle file is not found by the app at runtime, or it means that the version of the GoogleFramework.bundle file was not updated to the latest version when you updated Google SDK to the latest version, these two should always be of the same version. </p>
+<h2 id="invalid-key">Invalid key</h2>
+<pre><code>[INFO] : 2013-10-09 16:01:19.633 Test test[18227:a0b] ClientParametersRequest failed, 0 attempts remaining (0 vs 5). Error Domain=com.google.HTTPStatus Code=400 "The operation couldnt be completed. (com.google.HTTPStatus error 400.)" UserInfo=0xdd650c0 {data=&lt;CFData 0xdd65ad0 [0x50ecec8]&gt;{length = 145, capacity = 256, bytes = 0x3c48544d4c3e0a3c484541443e0a3c54 ... 3c2f48544d4c3e0a}} 
+[INFO] : 2013-10-09 16:01:19.634 Test test[18227:a0b] Google Maps SDK for iOS cannot connect or validate APIKey: Error Domain=com.google.HTTPStatus Code=400 "The operation couldnt be completed. (com.google.HTTPStatus error 400.)" UserInfo=0xdd650c0 {data=&lt;CFData 0xdd65ad0 [0x50ecec8]&gt;{length = 145, capacity = 256, bytes = 0x3c48544d4c3e0a3c484541443e0a3c54 ... 3c2f48544d4c3e0a}} 
+[INFO] : 2013-10-09 16:01:19.634 Test test[18227:a0b]
+</code></pre>
+<p>Your key may be invalid for your bundle ID: my.test.app Your Google API key is invalid, or is not correctly paired with your app bundle ID or is not yet activated on Google servers (sometimes takes a few hours, maybe more)</p>
+<h2 id="googlemaps-version-mismatch">GoogleMaps version mismatch</h2>
+<pre><code>&lt;Error&gt;: CGContextDrawImage: invalid context 0x0. This is a serious error. This application, or a library it uses, is using an invalid context  and is thereby contributing to an overall degradation of system stability and reliability. This notice is a courtesy: please fix this problem. It will become a fatal error in an upcoming update.
+</code></pre>
+<p>Your GoogleMaps.framework and GoogleMaps.bundle are not of the same version, you need to update both at the same time you download a new version of the Google Maps SDK for iOS</p>
+<h1 id="contact">Contact</h1>
+<p>please send your questions and requests to canufind1@gmail.com </p>
+<p>Please don't post technical issues on the Module page @ marketplace.appcelerator.com</p>
+<p>if you feel you found a possible bug in the module
+please include with your bug report a sample project that illustrates the problem, 
+a screenshot of the bug is always helpful.</p>
+<h1 id="change-log">Change Log</h1>
+<h2 id="version-161">version 1.6.1</h2>
+<pre><code>Support for Google SDK v 1.6.1
+Added myLocationButton, compassButton settings
+Added map.zoom, map.currentRegion, map.mapType, map.selectedMarker getters
+Experimental support for built-in custom info windows
+</code></pre>
+<h2 id="version-151">version 1.5.1</h2>
+<pre><code>Added marker property: flat (skews with map perspective)
+Added marker property: rotation (beta note: google seems to have a tap event bug)
+Added marker property: draggable
+Added events: draggingMarker, dragMarkerBegin, dragMarkerEnd
+</code></pre>
+<h2 id="version-15">version 1.5</h2>
+<pre><code>Support for Google SDK v 1.5.0
+Support for iOS7
+Support for Titanium SDK 3.1.3.GA
+Added support for Titanium Alloy projects
+Added userData to the tapInfoWindowOfMarker event
+Added Alloy example app in the more_examples folder
+Added Marker properties: zIndex, groundAnchor
+Bug fixes
+</code></pre>
+<h2 id="version-13">version 1.3</h2>
+<pre><code>Support for Google SDK v 1.3.1
+Custom view markers are now supported via the iconView property 
+Added animated, tintColor, tappable options to markers
+Added tappable support and title property to circle overlays
+Support for Camera actions including fitBounds
+Added cameraMoveOnMarkerTap setting to override map pan on marker tap
+3D Flyby demo added to the sample app.js
+Better memory management
+Added another example app (window-scenarios.js) to show memory best practices
+</code></pre>
+<h2 id="version-12">version 1.2</h2>
+<pre><code>Support for Google SDK v 1.2.2.3031
+Added Polygon,Circle support
+Added tapOverlay event
+Added selectMarker method
+</code></pre>
+<h2 id="version-11">version 1.1</h2>
+<pre><code>Support for Google SDK v 1.1.2.2533
+Added Polyline support
+Added visibleRegion reporting on the "changeCameraPosition" event
+</code></pre>
+<h2 id="version-10">version 1.0</h2>
+<pre><code>Initial release
+</code></pre></body></html>

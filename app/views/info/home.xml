@@ -1,0 +1,25 @@
+<Alloy>
+	<Window id="window" title="情報">
+		<View id="wrapper">
+			<ListView id="listView" defaultItemTemplate="rowTemplate">
+				<Templates>
+					<ItemTemplate id="row" name="rowTemplate">
+						<Label id="title" bindId="title" />
+						<Label id="mark" />
+					</ItemTemplate>
+				</Templates>
+				<ListSection>
+					<ListItem title:text="チュートリアル" action="tutorial" />
+					<ListItem title:text="プライバシーポリシー" action="agreement" />
+					<ListItem title:text="ソフトウェアライセンス" action="license" />
+					<ListItem title:text="運営団体" action="about_us" />
+				</ListSection>
+			</ListView>
+			<View id="footer">
+				<Label class="copyright" text="Copyright 2007-2012 Ministry of Land, Infrastructure, Transport and Tourism All Rights Reserved." />
+				<Label class="copyright" text=" Copyright © 2007-2012 Save Hozu River Project." />
+				<Label id="version" class="copyright" />
+			</View>
+		</View>
+	</Window>
+</Alloy>

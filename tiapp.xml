@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ti:app xmlns:ti="http://ti.appcelerator.org">
+	<id>org.gomimap.gomimapapp</id>
+	<name>GomiMapApp</name>
+	<version>1.0.2</version>
+	<publisher>gomi-map.org</publisher>
+	<url>http://gomi-map.org</url>
+	<description></description>
+	<copyright>gomi-map.org</copyright>
+	<icon>appicon.png</icon>
+	<persistent-wifi>false</persistent-wifi>
+	<prerendered-icon>false</prerendered-icon>
+	<statusbar-style>default</statusbar-style>
+	<statusbar-hidden>false</statusbar-hidden>
+	<fullscreen>false</fullscreen>
+	<navbar-hidden>true</navbar-hidden>
+	<analytics>false</analytics>
+	<guid>de85bb28-7c04-47d1-afe8-037a7b478d94</guid>
+	<property name="ti.ui.defaultunit" type="string">dp</property>
+	<iphone>
+		<orientations device="iphone">
+			<orientation>Ti.UI.PORTRAIT</orientation>
+			<orientation>Ti.UI.UPSIDE_PORTRAIT</orientation>
+		</orientations>
+		<orientations device="ipad">
+			<orientation>Ti.UI.PORTRAIT</orientation>
+			<orientation>Ti.UI.UPSIDE_PORTRAIT</orientation>
+			<orientation>Ti.UI.LANDSCAPE_LEFT</orientation>
+			<orientation>Ti.UI.LANDSCAPE_RIGHT</orientation>
+		</orientations>
+	</iphone>
+	<ios>
+		<plist>
+			<dict>
+				<key>NSLocationWhenInUseUsageDescription</key>
+				<string>現在位置を取得します</string>
+			</dict>
+		</plist>
+	</ios>
+	<android xmlns:android="http://schemas.android.com/apk/res/android">
+		<manifest><!-- To Custom AndroidManifest.xml--></manifest>
+	</android>
+	<mobileweb>
+		<precache>
+		</precache>
+		<splash>
+			<enabled>true</enabled>
+			<inline-css-images>true</inline-css-images>
+		</splash>
+		<theme>default</theme>
+	</mobileweb>
+	<modules>
+		<module platform="android">facebook</module>
+		<module platform="iphone">facebook</module>
+		<module platform="android">ti.map</module>
+		<module platform="android" version="2.2.1">ti.imagefactory</module>
+		<module platform="iphone" version="1.6.1">com.moshemarciano.googlemaps</module>
+	</modules>
+	<deployment-targets>
+		<target device="android">true</target>
+		<target device="blackberry">false</target>
+		<target device="ipad">false</target>
+		<target device="iphone">true</target>
+		<target device="mobileweb">false</target>
+		<target device="tizen">false</target>
+	</deployment-targets>
+	<sdk-version>3.4.1.GA</sdk-version>
+	<plugins>
+		<plugin version="1.0">ti.alloy</plugin>
+	</plugins>
+
+	<!-- Property -->
+	<property name="ios.googlemap.key">AIzaSyDyg5yqi1qw8__cfWbzCfUpPTzNb1ci69c</property>
+	<property name="ti.facebook.appid">514400278690519</property>
+	<property name="twitter.apikey">ADALbWhs0SSmAlAUMWOUC1Cat</property>
+	<property name="twitter.apisecret">FvjeTqAbKvkPqwkpDlOcSdhzkQZpcphObGY3iGKG75nCkVGvT4</property>
+</ti:app>

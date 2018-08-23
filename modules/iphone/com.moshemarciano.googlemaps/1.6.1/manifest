@@ -1,0 +1,18 @@
+#
+# this is your module manifest and used by Titanium
+# during compilation, packaging, distribution, etc.
+#
+version: 1.6.1
+apiversion: 2
+description: Google Maps for iOS module
+author: TRIPHASE
+license: commercial
+copyright: Copyright (c) 2013 by Moshe Marciano
+
+
+# these should not be edited
+name: googlemaps
+moduleid: com.moshemarciano.googleMaps
+guid: e50fd467-20ca-4124-873d-632f20b38f64
+platform: iphone
+minsdk: 2.1.4.GA

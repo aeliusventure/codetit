@@ -1,0 +1,17 @@
+"#indexTabGroup": {
+},
+"#mapTab[platform=ios]": {
+    activeIcon: '/images/tab_map_on.png',
+    icon: "/images/tab_map_off.png",
+    iconIsMask: false,
+},
+"#timelineTab[platform=ios]": {
+    activeIcon: '/images/tab_timeline_on.png',
+    icon: "/images/tab_timeline_off.png",
+    iconIsMask: false,
+},
+"#userTab[platform=ios]": {
+    activeIcon: '/images/tab_user_on.png',
+    icon: "/images/tab_user_off.png",
+    iconIsMask: false,
+},

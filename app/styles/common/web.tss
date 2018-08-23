@@ -1,0 +1,22 @@
+"#webview": {
+	top: 0,
+	bottom: 45,
+	width: Ti.UI.FILL,
+},
+"#toolbar": {
+	bottom: 0,
+	height: 45,
+},
+"#back": {
+	image: "/images/left.png"
+},
+"#forward": {
+	image: "/images/right.png"
+},
+"#reload": {
+	systemButton: Ti.UI.iPhone.SystemButton.REFRESH
+},
+"#fixedspace1": {
+	systemButton: Ti.UI.iPhone.SystemButton.FIXED_SPACE,
+	width: 40
+},

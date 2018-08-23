@@ -1,0 +1,43 @@
+<Alloy>
+	<View id="wrapper">
+		<View class="groupView">
+			<View id="sortNewBtn" class="buttonView">
+				<Label id="sortNewLabel" class="titleLabel" text="新着順" />
+				<Label id="sortNewChkLabel" class="checkLabel" text="" />
+			</View>
+			<View id="sortRankBtn" class="buttonView">
+				<Label id="sortRankLabel" class="titleLabel" text="ごみランク順" />
+				<Label id="sortRankChkLabel" class="checkLabel" text="" />
+			</View>
+		</View>
+		<View class="groupView">
+			<View id="week1Btn" class="buttonView">
+				<Label id="week1Label" class="titleLabel" text="1週間以内の登録" />
+				<Label id="week1ChkLabel" class="checkLabel" text="" />
+			</View>
+			<View id="week2Btn" class="buttonView">
+				<Label id="week2Label" class="titleLabel" text="2週間以内の登録" />
+				<Label id="week2ChkLabel" class="checkLabel" text="" />
+			</View>
+			<View id="week4Btn" class="buttonView">
+				<Label id="week4Label" class="titleLabel" text="1ヶ月以内の登録" />
+				<Label id="week4ChkLabel" class="checkLabel" text="" />
+			</View>
+			<View id="weekAllBtn" class="buttonView">
+				<Label id="weekAllLabel" class="titleLabel" text="全て" />
+				<Label id="weekAllChkLabel" class="checkLabel" text="" />
+			</View>
+		</View>
+		<View class="groupView">
+			<View id="hiddenRemovedBtn" class="buttonView">
+				<Label id="hiddenRemovedLabel" class="titleLabel" text="ごみ回収済みは非表示" />
+				<Label id="hiddenRemovedChkLabel" class="checkLabel" text="" />
+			</View>
+		</View>
+		<View id="buttonContainer">
+			<Button class="btnCancelSmall" id="cancelButton" title="キャンセル" />
+			<Button class="btnActionSmall" id="submitButton" title="　決　定　" />
+		</View>
+		<View class="spacer"></View>
+	</View>
+</Alloy>

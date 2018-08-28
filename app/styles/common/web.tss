@@ -14,9 +14,9 @@
 	image: "/images/right.png"
 },
 "#reload": {
-	systemButton: Ti.UI.iPhone.SystemButton.REFRESH
+	systemButton: Ti.UI.iOS.SystemButton.REFRESH
 },
 "#fixedspace1": {
-	systemButton: Ti.UI.iPhone.SystemButton.FIXED_SPACE,
+	systemButton: Ti.UI.iOS.SystemButton.FIXED_SPACE,
 	width: 40
 },

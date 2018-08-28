@@ -32,7 +32,7 @@
 }
 
 ".loadingIndicator[platform=ios]": {
-	style: Ti.UI.iPhone.ActivityIndicatorStyle.BIG
+	style: Ti.UI.ActivityIndicatorStyle.BIG
 }
 
 ".loadingImages": {

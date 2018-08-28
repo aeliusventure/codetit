@@ -20,7 +20,7 @@ Alloy.Globals.config = {
         apikey: Ti.App.Properties.getString('twitter.apikey'),
         apisecret: Ti.App.Properties.getString('twitter.apisecret'),
     },
-}
+};
 
 //
 // UI
@@ -73,7 +73,7 @@ Alloy.Globals.Util = require('/utils');
  */
 Alloy.Globals.Util.getUrl = function(path) {
     return Alloy.Globals.Util.addServerUrl(path, Alloy.Globals.config.server);
-}
+};
 
 //
 // Models
@@ -87,7 +87,7 @@ Alloy.Globals.Model = {};
  */
 Alloy.Globals.Model.getModel = function(modelName) {
     return require('/models/' + modelName + '_model');
-}
+};
 
 //
 // State

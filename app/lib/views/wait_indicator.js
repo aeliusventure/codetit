@@ -11,7 +11,7 @@ function LoadingIndicator(_targetView) {
 
 		// ActivityIndicatorを生成
 		_wait = Ti.UI.createActivityIndicator({
-			style: OS_IOS ? Ti.UI.iPhone.ActivityIndicatorStyle.PLAIN : Ti.UI.ActivityIndicatorStyle.BIG,
+			style: OS_IOS ? Ti.UI.ActivityIndicatorStyle.BIG : Ti.UI.ActivityIndicatorStyle.BIG,
 			width: Ti.UI.SIZE,
 			height: Ti.UI.SIZE,
 			color: '#fff',

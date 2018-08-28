@@ -17,7 +17,7 @@ $.wrapper.addEventListener('click', function(e) {
         $.email.blur();
         $.password.blur();
     }
-})
+});
 
 /**
  * ログインを試行する

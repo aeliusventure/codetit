@@ -13,7 +13,7 @@ licenseFiles.push({
 if (OS_IOS) {
     licenseFiles.push({
         title: 'Google Map SDK for iOS',
-        text: require('com.moshemarciano.googleMaps').openSourceLicenseInfo,
+        text: 'GOOGLE_MAP_IOS_MODULE_LICENSE.txt' //require('com.moshemarciano.googleMaps').openSourceLicenseInfo,
     });
     licenseFiles.push({
         title: 'Google Maps for iOS module',

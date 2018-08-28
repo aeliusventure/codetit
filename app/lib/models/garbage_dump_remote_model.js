@@ -60,6 +60,7 @@ function GarbageDumpModel() {
 
         if (conditions['area']) {
             var area = conditions['area'];
+            Ti.API.info('area==========> ' + JSON.stringify(area));
             url = Alloy.Globals.Util.addUrlParam(url, 'near_right_lat', area.nearRightLat);
             url = Alloy.Globals.Util.addUrlParam(url, 'near_right_lng', area.nearRightLng);
             url = Alloy.Globals.Util.addUrlParam(url, 'far_left_lat', area.farLeftLat);

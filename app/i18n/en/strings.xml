@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resources>
+	<string name="facebook_app_id">514400278690519</string>
+	<string name="txt_nickname">ニックネーム\n(表示名)</string>
+	<string name="txt_id_email">IDまたは\nメールアドレス</string>
+	<string name="txt_fb_switch">Facebook連携</string>
+	<string name="txt_tw_switch">Twitter連携</string>
+	<string name="txt_swt_on">連携する</string>
+	<string name="txt_swt_off">連携しない</string>
+</resources>

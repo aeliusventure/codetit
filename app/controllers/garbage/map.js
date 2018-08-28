@@ -51,7 +51,7 @@ if (OS_IOS) {
 } else {
     $.showFilter = function() {
        filter.show($.mapContainer);
-    }
+    };
 }
 $.registerBtn.addEventListener('click', goRegister);
 

@@ -4,27 +4,26 @@
 		<RightNavButton platform="ios">
 			<Button id="infoButton" title="情報" />
 		</RightNavButton>
-
 		<ScrollView id="wrapper">
 			<View class="spacer" />
-			<View class="itemContainer">
-				<Label class="itemTitle" text="IDまたは\nメールアドレス" />
-				<Label id="email" class="itemValue" />
+			<View class="itemContainerClass">
+				<Label id="lblItemId" class="itemTitleClass" />
+				<Label id="lbl_email" class="itemValue" />
 			</View>
 			<View class="itemSeparator" />
-			<View class="itemContainer">
-				<Label class="itemTitle" text="ニックネーム\n(表示名)" />
-				<Label id="nick_name" class="itemValue" />
+			<View class="itemContainerClass">
+				<Label id="lblItemNickname" class="itemTitleClass" />
+				<Label id="lbl_nick_name" class="itemValue" />
 			</View>
 			<View class="itemSeparator" />
-			<View class="itemContainer">
-				<Label class="itemTitle" text="Facebook連携" />
-				<Switch id="connect_facebook" value="false" titleOn='連携する' titleOff="連携しない" class="itemValue2" />
+			<View class="itemContainerClass">
+				<Label id="lblFacebook" class="itemTitleClass" />
+				<Switch id="connect_facebook" class="itemValue2" />
 			</View>
 			<View class="itemSeparator" />
-			<View class="itemContainer">
-				<Label class="itemTitle" text="Twitter連携" />
-				<Switch id="connect_twitter" value="false" titleOn='連携する' titleOff="連携しない" class="itemValue2" />
+			<View class="itemContainerClass">
+				<Label id="lblTwitter" class="itemTitleClass" />
+				<Switch id="connect_twitter" class="itemValue2" />
 			</View>
 			<View class="itemSeparator" />
 			<Button id="goMyselfMapButton" class="btnActionLarge" title="マップ表示" />

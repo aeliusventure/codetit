@@ -1,9 +1,0 @@
-<Alloy>
-	<View id="wrapper">
-		<Picker id="picker" type="Ti.UI.PICKER_TYPE_DATE" />
-		<View id="buttonContainer">
-			<Button class="btnCancelSmall" id="cancelButton" title="キャンセル" />
-			<Button class="btnActionSmall" id="submitButton" title="　決　定　" />
-		</View>
-	</View>
-</Alloy>

@@ -1,9 +1,0 @@
-<Alloy>
-	<View id="rowWrapper">
-		<Label id="title" />
-		<View id="licenseContainer">
-			<Label id="license" />
-		</View>
-		<View class="spacer" />
-	</View>
-</Alloy>

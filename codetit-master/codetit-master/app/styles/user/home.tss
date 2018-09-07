@@ -1,0 +1,107 @@
+"#wrapper": {
+	width: Ti.UI.FILL,
+	height: Ti.UI.FILL,
+	contentWidth: Ti.UI.FILL,
+	contentHeight: Ti.UI.SIZE,
+	showHorizontalScrollIndicator: false,
+	showVerticalScrollIndicator: true,
+    layout: 'vertical',
+},
+"#topContainer": {
+    top: 0,
+    height: Ti.UI.SIZE,
+    layout: 'vertical',
+},
+"#goMyselfMapButton": {
+    top: 20,
+},
+"#goMyselfTimelineButton": {
+    top: 10,
+},
+"#goEditProfileButton": {
+    top: 10,
+},
+"#logoutButton": {
+    top: 25,
+},
+
+
+// Solution for Text gone Issue
+".itemContainerClass": {
+	top: 8,
+	bottom: 10,
+	left: 10,
+	right: 10,
+	width: Ti.UI.FILL,
+	height: Ti.UI.SIZE,
+	// backgroundColor:"red"
+},
+".itemTitleClass": {
+	left: 0,
+	width: 120,
+	height: Ti.UI.SIZE,
+	textAlign: Ti.UI.TEXT_ALIGNMENT_LEFT,
+	font: {
+		fontSize: 14,
+		fontWeight: 'bold'
+	},
+	color: '#333',
+	//backgroundColor:"yellow"
+},
+".lblSocialClass": {
+	left: 0,
+	textAlign: Ti.UI.TEXT_ALIGNMENT_LEFT,
+	height: 45,
+	width: 130,
+	font: {
+		fontSize: 14,
+		fontWeight: 'bold'
+	},
+	color: '#333',
+	backgroundColor:"yellow"
+},
+".itemValue": {
+	left: 120,
+	width: Ti.UI.FILL,
+	height: Ti.UI.SIZE,
+	textAlign: Ti.UI.TEXT_ALIGNMENT_LEFT,
+	font: {
+		fontSize: 14
+	},
+	color: '#333'
+},
+
+".itemValue2": {
+	left: 135,
+	width: Ti.UI.SIZE,
+	height: Ti.UI.SIZE,
+	value: false
+},
+
+"#lblItemId": {
+	text: L('txt_id_email')
+},
+"#lbl_email": {
+	text: ""
+},
+"#lblItemNickname": {
+	text: L('txt_nickname')
+},
+"#lbl_nick_name": {
+	text: ""
+},
+"#lblFacebook": {
+	text: L('txt_fb_switch')
+},
+"#lblTwitter": {
+	text: L('txt_tw_switch')
+},
+
+"#connect_facebook": {
+	titleOn: L('txt_swt_on'),
+	titleOff: L('txt_swt_off')
+},
+"#connect_twitter": {
+	titleOn: L('txt_swt_on'),
+	titleOff: L('txt_swt_off')
+}

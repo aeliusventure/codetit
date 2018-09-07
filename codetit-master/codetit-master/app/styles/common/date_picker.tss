@@ -1,0 +1,24 @@
+"#wrapper" : {
+    width: '90%',
+    height: Ti.UI.SIZE,
+    layout: 'vertical',
+    backgroundColor: '#444',
+    zIndex: 999999,
+},
+"#picker": {
+    top: 10,
+    height: Ti.UI.SIZE,
+    width: '95%',
+    backgroundColor: '#fff',
+},
+"#buttonContainer" :{
+    top: 10, bottom: 10,
+    width: Ti.UI.FILL,
+    height: Ti.UI.SIZE,
+},
+"#cancelButton": {
+    left: 10,
+},
+"#submitButton": {
+    right: 10,
+},

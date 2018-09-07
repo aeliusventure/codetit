@@ -1,0 +1,53 @@
+"#scrollView": {
+    width: Ti.UI.FILL,
+    height: Ti.UI.FILL,
+},
+"#wrapper": {
+    top: 0,
+    width: Ti.UI.FILL,
+    height: Ti.UI.SIZE,
+    layout: 'vertical',
+},
+
+".itemLabel": {
+    top: 10,
+    left: 10,
+    height: Ti.UI.SIZE,
+    font: { fontWeight: 'bold' },
+    textAlign: Ti.UI.TEXT_ALIGNMENT_LEFT,
+},
+".itemValue": {
+    top: 10,
+    left: 10,
+    right: 10,
+    borderStyle: Ti.UI.INPUT_BORDERSTYLE_ROUNDED,
+},
+".passwordWarnLabel": {
+    top: 10,
+    left: 10,
+    height: Ti.UI.SIZE,
+    font: { fontSize: 12 },
+    textAlign: Ti.UI.TEXT_ALIGNMENT_LEFT,
+},
+
+"#email": {
+    keyboardType: Ti.UI.KEYBOARD_EMAIL,
+    returnKeyType: Ti.UI.RETURNKEY_NEXT,
+},
+"#password": {
+    keyboardType: Ti.UI.KEYBOARD_ASCII,
+    returnKeyType: Ti.UI.RETURNKEY_NEXT,
+    passwordMask: true
+},
+"#password_confirmation": {
+    keyboardType: Ti.UI.KEYBOARD_ASCII,
+    returnKeyType: Ti.UI.RETURNKEY_NEXT,
+    passwordMask: true
+},
+"#nickname": {
+    keyboardType: Ti.UI.KEYBOARD_DEFAULT,
+    returnKeyType: Ti.UI.RETURNKEY_NEXT,
+},
+"#registerButton": {
+    top: 20,
+},

@@ -1,0 +1,127 @@
+<Alloy>
+	<Window id="window" title="ごみ詳細情報">
+			<!-- ショートカット選択-->
+			<ScrollView id="wrapper1">
+				<Button id="switchBtn1" class="switchBtn" title="明細選択へ \uf054" />
+				<View class="itemXContainer">
+					<Label class="itemXTitle">ごみの種類(1)</Label>
+					<View class="itemXValueView">
+						<Widget src="com.orthlieb.combobox" id="shortcutValue1" class="itemCombo" hintText="選択してください..." />
+						<View class="itemNumContainer">
+							<TextField id="shortcutNum1" class="itemNum" keyboardType="Ti.UI.KEYBOARD_NUMBER_PAD" bubbleParent="false" />
+							<Label class="itemNumStr" text="個" />
+						</View>
+					</View>
+				</View>
+				<View class="itemXContainer">
+					<Label class="itemXTitle">ごみの種類(2)</Label>
+					<View class="itemXValueView">
+						<Widget src="com.orthlieb.combobox" id="shortcutValue2" class="itemCombo" hintText="選択してください..." />
+						<View class="itemNumContainer">
+							<TextField id="shortcutNum2" class="itemNum" keyboardType="Ti.UI.KEYBOARD_NUMBER_PAD" bubbleParent="false" />
+							<Label class="itemNumStr" text="個" />
+						</View>
+					</View>
+				</View>
+				<View class="itemXContainer">
+					<Label class="itemXTitle">ごみの種類(3)</Label>
+					<View class="itemXValueView">
+						<Widget src="com.orthlieb.combobox" id="shortcutValue3" class="itemCombo" hintText="選択してください..." />
+						<View class="itemNumContainer">
+							<TextField id="shortcutNum3" class="itemNum" keyboardType="Ti.UI.KEYBOARD_NUMBER_PAD" bubbleParent="false" />
+							<Label class="itemNumStr" text="個" />
+						</View>
+					</View>
+				</View>
+				<View class="itemXContainer">
+					<Label class="itemXTitle">ごみの種類(4)</Label>
+					<View class="itemXValueView">
+						<Widget src="com.orthlieb.combobox" id="shortcutValue4" class="itemCombo" hintText="選択してください..." />
+						<View class="itemNumContainer">
+							<TextField id="shortcutNum4" class="itemNum" keyboardType="Ti.UI.KEYBOARD_NUMBER_PAD" bubbleParent="false" />
+							<Label class="itemNumStr" text="個" />
+						</View>
+					</View>
+				</View>
+				<View class="itemXContainer">
+					<Label class="itemXTitle">ごみの種類(5)</Label>
+					<View class="itemXValueView">
+						<Widget src="com.orthlieb.combobox" id="shortcutValue5" class="itemCombo" hintText="選択してください..." />
+						<View class="itemNumContainer">
+							<TextField id="shortcutNum5" class="itemNum" keyboardType="Ti.UI.KEYBOARD_NUMBER_PAD" bubbleParent="false" />
+							<Label class="itemNumStr" text="個" />
+						</View>
+					</View>
+				</View>
+				<View class="itemXContainer" id="submitButton1Container">
+					<Button class="btnActionLarge" id="submitButton1" title="登録" />
+				</View>
+				<TextArea id="garbageDescLabel" value="このごみの分類方法は、一般社団法人JEANが展開する国際海岸クリーンアップ（ICC)の日本版データカードに基づいたものです。詳しく知りたい方は、http://www.jean.jp/ をご覧下さい。" />
+				<View class="spacer"></View>
+			</ScrollView>
+			<!-- 詳細選択-->
+			<ScrollView id="wrapper2">
+				<Button id="switchBtn2" class="switchBtn" title="\uf053 ショートカット選択へ" />
+				<View class="itemXContainer">
+					<Label class="itemXTitle">ごみの種類(1)</Label>
+					<View class="itemXValueView">
+						<Widget src="com.orthlieb.combobox" id="mdlValue1" class="itemCombo" hintText="中分類..." />
+						<Widget src="com.orthlieb.combobox" id="smlValue1" class="itemCombo" hintText="小分類..." />
+						<View class="itemNumContainer">
+							<TextField id="detailNum1" class="itemNum" keyboardType="Ti.UI.KEYBOARD_NUMBER_PAD" bubbleParent="false" />
+							<Label class="itemNumStr" text="個" />
+						</View>
+					</View>
+				</View>
+				<View class="itemXContainer">
+					<Label class="itemXTitle">ごみの種類(2)</Label>
+					<View class="itemXValueView">
+						<Widget src="com.orthlieb.combobox" id="mdlValue2" class="itemCombo" hintText="中分類..." />
+						<Widget src="com.orthlieb.combobox" id="smlValue2" class="itemCombo" hintText="小分類..." />
+						<View class="itemNumContainer">
+							<TextField id="detailNum2" class="itemNum" keyboardType="Ti.UI.KEYBOARD_NUMBER_PAD" bubbleParent="false" />
+							<Label class="itemNumStr" text="個" />
+						</View>
+					</View>
+				</View>
+				<View class="itemXContainer">
+					<Label class="itemXTitle">ごみの種類(3)</Label>
+					<View class="itemXValueView">
+						<Widget src="com.orthlieb.combobox" id="mdlValue3" class="itemCombo" hintText="中分類..." />
+						<Widget src="com.orthlieb.combobox" id="smlValue3" class="itemCombo" hintText="小分類..." />
+						<View class="itemNumContainer">
+							<TextField id="detailNum3" class="itemNum" keyboardType="Ti.UI.KEYBOARD_NUMBER_PAD" bubbleParent="false" />
+							<Label class="itemNumStr" text="個" />
+						</View>
+					</View>
+				</View>
+				<View class="itemXContainer">
+					<Label class="itemXTitle">ごみの種類(4)</Label>
+					<View class="itemXValueView">
+						<Widget src="com.orthlieb.combobox" id="mdlValue4" class="itemCombo" hintText="中分類..." />
+						<Widget src="com.orthlieb.combobox" id="smlValue4" class="itemCombo" hintText="小分類..." />
+						<View class="itemNumContainer">
+							<TextField id="detailNum4" class="itemNum" keyboardType="Ti.UI.KEYBOARD_NUMBER_PAD" bubbleParent="false" />
+							<Label class="itemNumStr" text="個" />
+						</View>
+					</View>
+				</View>
+				<View class="itemXContainer">
+					<Label class="itemXTitle">ごみの種類(5)</Label>
+					<View class="itemXValueView">
+						<Widget src="com.orthlieb.combobox" id="mdlValue5" class="itemCombo" hintText="中分類..." />
+						<Widget src="com.orthlieb.combobox" id="smlValue5" class="itemCombo" hintText="小分類..." />
+						<View class="itemNumContainer">
+							<TextField id="detailNum5" class="itemNum" keyboardType="Ti.UI.KEYBOARD_NUMBER_PAD" bubbleParent="false" />
+							<Label class="itemNumStr" text="個" />
+						</View>
+					</View>
+				</View>
+				<View class="itemXContainer" id="submitButton2Container">
+					<Button class="btnActionLarge" id="submitButton2" title="登録" />
+				</View>
+				<TextArea id="garbageDescLabel" value="このごみの分類方法は、一般社団法人JEANが展開する国際海岸クリーンアップ（ICC)の日本版データカードに基づいたものです。詳しく知りたい方は、http://www.jean.jp/ をご覧下さい。" />
+				<View class="spacer"></View>
+			</ScrollView>
+	</Window>
+</Alloy>

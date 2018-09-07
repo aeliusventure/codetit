@@ -1,0 +1,11 @@
+<Alloy>
+	<Window id="window" title="サービス規約・プライバシーポリシー">
+		<View id="wrapper">
+			<Label id="title" text="サービス規約・プライバシーポリシー" />
+			<WebView id="licenseContainer" />
+			<View id="bottomContainer">
+				<Button class="btnActionLarge" id="nextButton" title="規約に同意して次へ" />
+			</View>
+		</View>
+	</Window>
+</Alloy>

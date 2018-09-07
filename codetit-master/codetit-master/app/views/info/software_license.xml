@@ -1,0 +1,5 @@
+<Alloy>
+	<Window id="window" title="ソフトウェアライセンス">
+		<ScrollView id="wrapper"></ScrollView>
+	</Window>
+</Alloy>

@@ -1,0 +1,18 @@
+<Alloy>
+	<Window id="window" title="ログイン">
+		<!-- iOS -->
+		<RightNavButton platform="ios">
+			<Button id="infoButton" title="情報" />
+		</RightNavButton>
+
+		<ScrollView id="wrapper">
+			<Label id="loginLabel" text="ごみマップ ログイン" />
+			<View id="inputContainer">
+				<TextField id="email" hintText="IDまたはメールアドレス" /><!-- なぜかloginってIDにするとTiShadowが落ちる -->
+				<TextField id="password" hintText="パスワード" passwordMask="true" />
+				<Button class="btnActionLarge" id="loginButton" title="ログイン" />
+				<Button class="btnSubActionLarge" id="registerButton" title="ユーザー登録はこちら" />
+			</View>
+		</ScrollView>
+	</Window>
+</Alloy>

@@ -1,0 +1,137 @@
+<Alloy>
+	<Window id="window" title="ごみ詳細情報">
+		<ScrollView>
+			<View id="wrapper">
+				<ScrollableView id="imageContainer"></ScrollableView>
+
+				<View id="mapContainer" />
+
+				<View class="spacer" />
+
+				<View class="itemContainer">
+					<Label class="itemTitle">ごみのランク</Label>
+					<Label id="garbage_density_name" class="itemValue"></Label>
+				</View>
+				
+				<View class="itemSeparator" />
+				
+				<View class="itemContainer">
+					<Label class="itemTitle">ごみの種別</Label>
+					<Label id="garbage_type_name" class="itemValue"></Label>
+				</View>
+
+				<View class="itemSeparator" />
+
+				<!-- オプション（初期状態では閉じている） -->
+				<View id="toggleOptButton">
+					<Label id="toggleOptBtnMarkLabel" class="optionToOpen" text="\uf196" />
+					<Label id="toggleOptBtnLabel" text="オプション情報" />
+				</View>
+
+				<View id="optionContainer">
+					<View class="itemContainer">
+						<Label class="itemTitle">危険物</Label>
+						<Label id="garbage_dengared_name" class="itemValue"></Label>
+					</View>
+				
+					<View class="itemSeparator" />
+				
+					<View class="itemContainer">
+						<Label class="itemTitle">場所</Label>
+						<Label id="address" class="itemValue"></Label>
+					</View>
+				
+					<View class="itemSeparator" />
+				
+					<View class="itemContainer">
+						<Label class="itemTitle">河川名</Label>
+						<Label id="river" class="itemValue"></Label>
+					</View>
+
+					<View class="itemSeparator" />
+				
+					<View class="itemContainer">
+						<Label class="itemTitle">調査地点の名称</Label>
+						<Label id="name" class="itemValue"></Label>
+					</View>
+
+					<View class="itemSeparator" />
+				
+					<View class="itemContainer">
+						<Label class="itemTitle">調査日</Label>
+						<Label id="searched_at" class="itemValue"></Label>
+					</View>
+
+					<View class="itemSeparator" />
+				
+					<View class="itemContainer">
+						<Label class="itemTitle">予想される投棄時期</Label>
+						<Label id="time_thrown_away_name" class="itemValue"></Label>
+					</View>
+
+					<View class="itemSeparator" />
+				
+					<View class="itemContainer">
+						<Label class="itemTitle">右岸／左岸</Label>
+						<Label id="which_river_side_name" class="itemValue">左岸</Label>
+					</View>
+
+					<View class="itemSeparator" />
+				
+					<View class="itemContainer">
+						<Label class="itemTitle">調査地点が代表する距離（河川の延長）</Label>
+						<Label id="searched_length" class="itemValue"></Label>
+					</View>
+
+					<View class="itemSeparator" />
+				
+					<View class="itemContainer">
+						<Label class="itemTitle">コメント</Label>
+						<Label id="comment" class="itemValue"></Label>
+					</View>
+
+					<View class="itemSeparator" />
+				
+					<View class="itemContainer">
+						<Label class="itemTitle">調査後に回収処理したか</Label>
+						<Label id="has_removed_name" class="itemValue"></Label>
+					</View>
+
+					<View class="itemSeparator" />
+				
+					<View class="itemContainer">
+						<Label class="itemTitle">登録者</Label>
+						<Label id="user_name" class="itemValue"></Label>
+					</View>
+
+					<View class="itemSeparator" />
+				
+					<View class="itemContainer">
+						<Label class="itemTitle">ごみの詳細情報</Label>
+						<Button id="goGarbageCategoryButton" />
+					</View>
+
+					<View class="itemSeparator" />
+				</View>
+
+				<View id="removeGdButtonContainer" class="itemContainer" visible="false">
+					<Button class="btnActionLarge" id="removeGdButton" title="　" />
+				</View>
+
+				<View id="editButtonContainer" class="itemContainer" visible="false">
+					<Button class="btnSubActionLarge" id="editButton" title="編集" />
+				</View>
+
+				<View id="deleteButtonContainer" class="itemContainer" visible="false">
+					<Button class="btnDiscardLarge" id="deleteButton" title="削除" />
+				</View>
+
+				<View class="itemContainer">
+					<Label id="reportSpam" text="不適切な投稿として報告" />
+				</View>
+
+				<View class="spacer"></View>
+			</View>
+		</ScrollView>
+	</Window>
+</Alloy>

@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ti:app xmlns:ti="http://ti.appcelerator.org">
+    <id>org.gomimap.gomimapapp</id>
+    <name>GomiMapApp</name>
+    <version>1.0.2</version>
+    <publisher>gomi-map.org</publisher>
+    <url>http://gomi-map.org</url>
+    <description>not specified</description>
+    <copyright>gomi-map.org</copyright>
+    <icon>appicon.png</icon>
+    <persistent-wifi>false</persistent-wifi>
+    <prerendered-icon>false</prerendered-icon>
+    <statusbar-style>default</statusbar-style>
+    <statusbar-hidden>false</statusbar-hidden>
+    <fullscreen>false</fullscreen>
+    <navbar-hidden>true</navbar-hidden>
+    <analytics>false</analytics>
+    <!--<guid>2471f389-f4f5-4761-9333-8e4dda2c6871</guid>-->
+    <guid>0e208198-8c04-444d-9ccc-063521f58ad0</guid>
+    <property name="ti.ui.defaultunit" type="string">dp</property>
+    <ios>
+        <orientations device="iphone">
+            <orientation>Ti.UI.PORTRAIT</orientation>
+            <orientation>Ti.UI.UPSIDE_PORTRAIT</orientation>
+        </orientations>
+        <orientations device="ipad">
+            <orientation>Ti.UI.PORTRAIT</orientation>
+            <orientation>Ti.UI.UPSIDE_PORTRAIT</orientation>
+            <orientation>Ti.UI.LANDSCAPE_LEFT</orientation>
+            <orientation>Ti.UI.LANDSCAPE_RIGHT</orientation>
+        </orientations>
+        <plist>
+            <dict>
+                <key>NSLocationWhenInUseUsageDescription</key>
+                <string>現在位置を取得します</string>
+            </dict>
+            <dict>
+                <key>CFBundleURLTypes</key>
+                <array>
+                    <dict>
+                        <key>CFBundleURLName</key>
+                        <!-- Application ID same as the id value in the tiapp.xml file -->
+                        <string>org.gomimap.gomimapapp</string>
+                        <key>CFBundleURLSchemes</key>
+                        <array>
+                            <!-- Prefix the Facebook App ID with 'fb' -->
+                            <string>fb514400278690519</string>
+                        </array>
+                    </dict>
+                </array>
+                <key>FacebookAppID</key>
+                <!-- Facebook App ID -->
+                <string>514400278690519</string>
+                <key>FacebookDisplayName</key>
+                <!-- Facebook App Name from developer.facebook.com -->
+                <string>GomiMapApp</string>
+                <key>LSApplicationQueriesSchemes</key>
+                <array>
+                    <string>fbapi</string>
+                    <string>fb-messenger-api</string>
+                    <string>fbauth2</string>
+                    <string>fbshareextension</string>
+                </array>
+            </dict>
+        </plist>
+    </ios>
+    <android xmlns:android="http://schemas.android.com/apk/res/android">
+        <manifest android:versionCode="12" android:versionName="1.0.2"
+            package="org.gomimap.gomimapapp" xmlns:android="http://schemas.android.com/apk/res/android">
+            <uses-sdk android:minSdkVersion="16" android:targetSdkVersion="26"/>
+            <application android:debuggable="false"
+                android:icon="@drawable/appicon"
+                android:label="@string/appname"
+                android:name="GomimapappApplication" android:theme="@style/Theme.Gomimapstyle">
+                <activity
+                    android:configChanges="keyboard|keyboardHidden|screenLayout|screenSize|orientation"
+                    android:label="YourAppName"
+                    android:name="com.facebook.FacebookActivity" android:theme="@android:style/Theme.Translucent.NoTitleBar"/>
+                <meta-data android:name="com.facebook.sdk.ApplicationId" android:value="@string/facebook_app_id"/>
+                <provider
+                    android:authorities="com.facebook.app.FacebookContentProvider514400278690519"
+                    android:exported="true" android:name="com.facebook.FacebookContentProvider"/>
+                <activity
+                    android:configChanges="keyboardHidden|orientation|screenSize"
+                    android:label="@string/appname"
+                    android:name=".GomimapappActivity" android:theme="@style/Theme.Titanium">
+                    <intent-filter>
+                        <action android:name="android.intent.action.MAIN"/>
+                        <category android:name="android.intent.category.LAUNCHER"/>
+                    </intent-filter>
+                </activity>
+                <activity
+                    android:configChanges="keyboardHidden|orientation|screenSize" android:name="org.appcelerator.titanium.TiActivity"/>
+                <activity
+                    android:configChanges="keyboardHidden|orientation|screenSize"
+                    android:name="org.appcelerator.titanium.TiTranslucentActivity" android:theme="@style/Theme.AppCompat.Translucent"/>
+                <activity android:configChanges="screenSize" android:name="ti.modules.titanium.ui.android.TiPreferencesActivity"/>
+                <activity
+                    android:configChanges="keyboardHidden|orientation|screenSize"
+                    android:name="ti.modules.titanium.media.TiCameraActivity" android:theme="@style/Theme.AppCompat.Translucent.NoTitleBar.Fullscreen"/>
+                <meta-data android:name="com.google.android.geo.API_KEY" android:value="AIzaSyCTPYPALME-wLQX4wjQw0Q4Sox8xBTztmw"/>
+            </application>
+            <uses-permission android:name="android.permission.CAMERA"/>
+            <uses-permission android:name="android.permission.INTERNET"/>
+            <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+            <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+            <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+            <uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES"/>
+            <uses-permission android:name="org.gomimap.sp1.permission.MAPS_RECEIVE"/>
+            <uses-permission android:name="org.gomimap.gomimapapp.permission.MAPS_RECEIVE"/>
+            <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+            <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+            <uses-permission android:name="android.permission.ACCESS_MOCK_LOCATION"/>
+            <uses-feature android:glEsVersion="0x00020000" android:required="true"/>
+            <permission
+                android:name="org.gomimap.gomimapapp.permission.MAPS_RECEIVE" android:protectionLevel="signature"/>
+        </manifest>
+    </android>
+    <modules>
+        <module platform="android">facebook</module>
+        <module platform="iphone">facebook</module>
+        <module platform="iphone">ti.map</module>
+        <module platform="android">ti.map</module>
+        <module platform="android">ti.imagefactory</module>
+    </modules>
+    <deployment-targets>
+        <target device="mobileweb">false</target>
+        <target device="android">true</target>
+        <target device="ipad">false</target>
+        <target device="iphone">true</target>
+    </deployment-targets>
+    <sdk-version>7.3.0.GA</sdk-version>
+    <plugins>
+        <plugin version="1.0">ti.alloy</plugin>
+    </plugins>
+    <!-- Property -->
+    <property name="ios.googlemap.key">AIzaSyDyg5yqi1qw8__cfWbzCfUpPTzNb1ci69c</property>
+    <property name="ti.facebook.appid">514400278690519</property>
+    <property name="twitter.apikey">ADALbWhs0SSmAlAUMWOUC1Cat</property>
+    <property name="twitter.apisecret">FvjeTqAbKvkPqwkpDlOcSdhzkQZpcphObGY3iGKG75nCkVGvT4</property>
+    <property name="appc-app-id" type="string">5b837e535e8c4a78b0f416b8</property>
+</ti:app>

@@ -1,0 +1,74 @@
+"#window": {
+    tabBarHidden: true,
+},
+"#wrapper": {
+    top: 0,
+    left: 0,
+    layout: 'vertical',
+    height: Ti.UI.SIZE,
+}
+"#imageContainer": {
+    top: 0,
+    left: 0,
+    right: 0,
+    height: 200,
+    showPagingControl: true,
+},
+
+".garbageImage": {
+    defaultImage: '/images/loading.png',
+},
+
+"#mapContainer": {
+    width: Ti.UI.FILL,
+    height: 120,
+},
+"#mapContainer[platform=android]": {
+    top: 10,
+},
+
+// オプションToggleボタン
+"#toggleOptButton": {
+    top: 10, bottom: 10,
+    width: '85%',
+    height: 30,
+    backgroundImage: '/images/btn_garbage_option.png',
+    selectedbackgroundImage: '/images/btn_garbage_option_x.png',
+},
+"#toggleOptBtnMarkLabel": {
+    left: '25%',
+    width: Ti.UI.SIZE,
+    height: Ti.UI.FILL,
+    color: '#555',
+    font: {fontSize:18,fontFamily:Alloy.Globals.UI.font.fontAwesome.fontfamily},
+},
+"#toggleOptBtnLabel": {
+    left: '35%',
+    height: Ti.UI.FILL,
+    color: '#333',
+    
+},
+
+// オプション領域
+"#optionContainer": {
+    layout: 'vertical',
+    height: 0,
+    visible: false,
+},
+// ゴミ詳細情報ボタン
+"#goGarbageCategoryButton": {
+    width: 175,
+    height: 30,
+    right: 0,
+    backgroundImage: '/images/btn_go_detail.png',
+    selectedbackgroundImage: '/images/btn_go_detail_x.png',
+},
+"#goGarbageCategoryButton[platform=android]": {
+    width: 123,
+    height: 30,
+},
+"#reportSpam": {
+    right: 10,
+    color: "#aaa",
+    font: {fontSize:14}
+},

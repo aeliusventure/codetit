@@ -1,0 +1,30 @@
+<Alloy>
+	<!-- iOS：タブの文字を含めて画像でやる（タブ文字の非アクティブ時の色が変更できないので） -->
+	<TabGroup id="indexTabGroup" platform="ios">
+		<Tab id="mapTab">
+			<Require id="map" src="garbage/map" type="view" />
+		</Tab>
+		<Tab id="timelineTab">
+			<Require id="timeline" src="garbage/timeline" type="view" />
+		</Tab>
+		<Tab id="userTab">
+			<!-- 初期はログイン -->
+			<Require id="userLogin" src="user/login" type="view" />
+		</Tab>
+	</TabGroup>
+
+	<!-- Android -->
+	<TabGroup id="indexTabGroup" exitOnClose="true" platform="android">
+		<!-- Android Menu は Controller で設定 -->
+		<Tab id="mapTab" title="マップ">
+			<Require id="map" src="garbage/map" type="view" />
+		</Tab>
+		<Tab id="timelineTab" title="タイムライン">
+			<Require id="timeline" src="garbage/timeline" type="view" />
+		</Tab>
+		<Tab id="userTab" title="マイページ">
+			<!-- 初期はログイン -->
+			<Require id="userLogin" src="user/login" type="view" />
+		</Tab>
+	</TabGroup>
+</Alloy>

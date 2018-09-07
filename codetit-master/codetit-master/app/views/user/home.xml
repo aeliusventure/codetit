@@ -1,0 +1,36 @@
+<Alloy>
+	<Window id="window" title="マイページ">
+		<!-- iOS -->
+		<RightNavButton platform="ios">
+			<Button id="infoButton" title="情報" />
+		</RightNavButton>
+		<ScrollView id="wrapper">
+			<View class="spacer" />
+			<View class="itemContainerClass">
+				<Label id="lblItemId" class="itemTitleClass" />
+				<Label id="lbl_email" class="itemValue" />
+			</View>
+			<View class="itemSeparator" />
+			<View class="itemContainerClass">
+				<Label id="lblItemNickname" class="itemTitleClass" />
+				<Label id="lbl_nick_name" class="itemValue" />
+			</View>
+			<View class="itemSeparator" />
+			<View class="itemContainerClass">
+				<Label id="lblFacebook" />
+				<Switch id="connect_facebook" class="itemValue2" />
+			</View>
+			<View class="itemSeparator" />
+			<View class="itemContainerClass">
+				<Label id="lblTwitter" />
+				<Switch id="connect_twitter" class="itemValue2" />
+			</View>
+			<View class="itemSeparator" />
+			<Button id="goMyselfMapButton" class="btnActionLarge" title="マップ表示" />
+			<Button id="goMyselfTimelineButton" class="btnActionLarge" title="タイムライン表示" />
+			<Button id="goEditProfileButton" class="btnSubActionLarge" title="プロフィール編集" />
+			<Button id="logoutButton" class="btnDiscardLarge" title="ログアウト" />
+			<View class="spacer" />
+		</ScrollView>
+	</Window>
+</Alloy>
